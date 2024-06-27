@@ -1,0 +1,101 @@
+<!DOCTYPE html>  
+<html lang="zh">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>我的网页</title>
+<link rel="stylesheet" href="css/styles.css"/>
+<script src="js/script.js" defer></script>
+</head>  
+<body>
+  
+<header>  
+    <h1>我的网页</h1>  
+    <div class="user-avatar" id="User-avatar" onclick="toggleDropdown()">  
+        <!-- 用户头像 -->  
+        <img src="表情包/HS5NP1Z3M41E`VI0~R7H)5U.jpg" alt="用户头像">  
+        <div id="dropdown" class="dropdown-content">  
+            <a href="个人中心.html" onclick="goToPage('个人中心')">个人中心</a>
+            <a href="钱包管理中心.html"onclick="goToPage('钱包管理中心')">钱包管理中心</a>  
+            <a href="文件管理.html" onclick="goToPage('文件管理')">文件管理</a>  
+        </div>  
+    </div>  
+</header>  
+  
+<nav>  
+    <!-- 导航栏 -->  
+    <ul>  
+        <li><a href="大作业.html">首页</a></li>  
+        <li><a href="关于网页.html">关于网页</a></li>  
+        <li><a href="服务.html">服务</a></li>  
+        <li><a href="联系管理员.html">联系管理员</a></li>  
+    </ul>  
+</nav>  
+  
+<main>  
+<p class="content-left-again">下面是我喜欢看的：</p>
+    <div class="content-left">  
+        <!-- 左侧内容区域 -->  
+        <!-- 图片和标题 -->  
+		<div class="clearfix">
+			<div class="image-box">
+				<a href="https://www.silisilifun.com/vodplay/m4Z7777Z/1/12/" style="color: black; text-decoration: none;">
+					<img src="表情包/一拳超人.jpg" alt="图片1"/>
+					<p style="font-family: '胖胖的字', sans-serif;">一拳超人</p>
+				</a>
+			</div>
+			<div class="image-box">
+				<a href="https://www.bilibili.com/bangumi/play/ep782163?spm_id_from=333.337.0.0" style="color: black; text-decoration: none;">
+					<img src="表情包/香格里拉边境.jpg" alt="图片2"/>
+					<p style="font-family: '胖胖的字', sans-serif;">香格里拉边境</p>
+				</a>
+			</div>  
+			<div class="image-box1">
+				<a href="https://www.bilibili.com/bangumi/play/ep279741?spm_id_from=333.337.0.0" style="color: black; text-decoration: none;">
+					<img src="表情包/排球少年.jpg" alt="图片3"/>
+					<p style="font-family: '胖胖的字', sans-serif;">排球少年</p>
+				</a>
+			</div>
+        <!-- 重复以上结构5次以放置其他5张图片 -->  
+		</div>
+	</div>
+	
+	<div class="content-left">
+		<div class="clearfix">
+			<div class="image-box">
+				<a href="https://www.bilibili.com/bangumi/play/ep21265?spm_id_from=333.337.0.0" style="color: black; text-decoration: none;">
+					<img src="表情包/轻音少女.jpg" alt="图片4"/>
+					<p style="font-family: '胖胖的字', sans-serif;">轻音少女</p>
+				</a>
+			</div>
+			<div class="image-box">
+				<a href="https://www.bilibili.com/bangumi/play/ep693247?spm_id_from=333.337.0.0" style="color: black; text-decoration: none;">
+					<img src="表情包/孤独摇滚.jpg" alt="图片5"/>
+					<p style="font-family: '胖胖的字', sans-serif;">孤独摇滚</p>
+				</a>
+			</div>
+			<div class="image-box1">
+				<a href="https://www.bilibili.com/bangumi/play/ep508404?spm_id_from=333.337.0.0" style="color: black; text-decoration: none;">
+					<img src="表情包/间谍过家家.jpg" alt="图片6"/>
+					<p style="font-family: '胖胖的字', sans-serif;">间谍过家家</p>
+				</a>
+			</div>
+		</div>
+	</div>
+    <div class="ad-sidebar">  
+        <!-- 广告栏 -->  
+        <a href="https://www.bilibili.com/" onclick="goToPage('ad')">
+            <img src="表情包/guanggao.jpg" alt="广告图片" id="ad-image">  
+			<span id="close-ad" onclick="closeAd(event)">×</span>  
+        </a>
+    </div>  
+</main>  
+  
+<footer>  
+    <!-- 状态栏 -->  
+	<div class="footer">
+		<p>版权所有 &copy; 2024 轻语</p>  
+	</div>
+</footer>  
+</body>  
+</html>
